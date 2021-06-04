@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "430558791527",
+    "firebase_url": "https://voice-control-home-autom-dce60-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "voice-control-home-autom-dce60",
+    "storage_bucket": "voice-control-home-autom-dce60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430558791527:android:b3f7cd956c33e977ef91c2",
+        "android_client_info": {
+          "package_name": "com.blogspot.rajbtc.voicecontrolledhomeautomation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430558791527-3p6btd3jd8d9b4l1sreqvnf2587pk58g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfzjDvikEeSzlUnxj-aXxh2Y28GPRc4Wc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430558791527-3p6btd3jd8d9b4l1sreqvnf2587pk58g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
