@@ -3,11 +3,11 @@
 
 
 
-#define FIREBASE_HOST "voice-control-home-autom-dce60-default-rtdb.asia-southeast1.firebasedatabase.app"  //Database link
-#define FIREBASE_AUTH "SZ8Ykj6AuNued4AjZxUHv7eNjHn27pNSu5IlDaTH"  //Database secrate
+#define FIREBASE_HOST "voice-control-home-autom-dce60-default-rtdb.asia-southeast1.firebasedatabase.app"  
+#define FIREBASE_AUTH "SZ8Ykj6AuNued4AjZxUHv7eNjHn27pNSu5IlDaTH"
 
-#define WIFI_SSID "Roboment"      //Router name
-#define WIFI_PASSWORD "roboment@2018"  //Router password
+#define WIFI_SSID "IOT_VOICE"     
+#define WIFI_PASSWORD "5555555555" 
 
 
 FirebaseData firebaseData,loadData;
