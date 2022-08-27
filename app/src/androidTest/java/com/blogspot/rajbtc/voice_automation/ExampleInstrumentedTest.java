@@ -1,4 +1,4 @@
-package com.blogspot.rajbtc.voicecontrolledhomeautomation;
+package com.blogspot.rajbtc.voice_automation;
 
 import android.content.Context;
 

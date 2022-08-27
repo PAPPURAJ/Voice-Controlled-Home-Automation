@@ -1,4 +1,4 @@
-package com.blogspot.rajbtc.voicecontrolledhomeautomation;
+package com.blogspot.rajbtc.voice_automation;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -11,7 +11,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.blogspot.rajbtc.voicecontrolledhomeautomation.R;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -26,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ImageView speak = findViewById(R.id.iv_mic);
-        // Write a message to the database
 
 
         speak.setOnClickListener(new View.OnClickListener() {
@@ -63,22 +61,22 @@ public class MainActivity extends AppCompatActivity {
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
 
                     ((TextView) findViewById(R.id.tv_speech_to_text)).setText(result.get(0) + "");
-                    FirebaseDatabase database = FirebaseDatabase.getInstance();
+                    DatabaseReference database = FirebaseDatabase.getInstance().getReference("Load");
                     String text = result.get(0).toLowerCase();
 
                     if (text.contains("light") && text.contains("on")) {
 
-                        database.getReference("Light").setValue("1");
+                        database.child("Light").setValue("1");
 
                     } else if ((text.contains("light") && text.contains("off"))) {
-                        database.getReference("Light").setValue("0");
+                        database.child("Light").setValue("0");
                     }
-                    else if (text.contains("fan") && text.contains("on")) {
-                        database.getReference("Fan").setValue("1");
+                    else if (text.contains("Pump") && text.contains("on")) {
+                        database.child("Pump").setValue("1");
 
-                    } else if ((text.contains("fan") && text.contains("off"))) {
+                    } else if ((text.contains("Pump") && text.contains("off"))) {
 
-                        database.getReference("Fan").setValue("0");
+                        database.child("Pump").setValue("0");
 
                     } else {
                         ((TextView) findViewById(R.id.tv_speech_to_text)).setText("Please try again");

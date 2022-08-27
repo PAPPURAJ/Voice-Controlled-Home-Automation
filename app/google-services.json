@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "430558791527",
-    "firebase_url": "https://voice-control-home-autom-dce60-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "voice-control-home-autom-dce60",
-    "storage_bucket": "voice-control-home-autom-dce60.appspot.com"
+    "project_number": "284023033623",
+    "firebase_url": "https://voiceautomation-8d4cc-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "voiceautomation-8d4cc",
+    "storage_bucket": "voiceautomation-8d4cc.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:430558791527:android:b3f7cd956c33e977ef91c2",
+        "mobilesdk_app_id": "1:284023033623:android:8a136c36b117ee9dbb7152",
         "android_client_info": {
-          "package_name": "com.blogspot.rajbtc.voicecontrolledhomeautomation"
+          "package_name": "com.blogspot.rajbtc.voice_automation"
         }
       },
       "oauth_client": [
         {
-          "client_id": "430558791527-3p6btd3jd8d9b4l1sreqvnf2587pk58g.apps.googleusercontent.com",
+          "client_id": "284023033623-0kv63139pvofj1dlr8pbr73d6n1t7h25.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCfzjDvikEeSzlUnxj-aXxh2Y28GPRc4Wc"
+          "current_key": "AIzaSyBtYppqcN2ZRoI8aLRWnwjcyv2AlpLKoxc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "430558791527-3p6btd3jd8d9b4l1sreqvnf2587pk58g.apps.googleusercontent.com",
+              "client_id": "284023033623-0kv63139pvofj1dlr8pbr73d6n1t7h25.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
