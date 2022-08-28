@@ -3,11 +3,11 @@
 
 
 
-#define FIREBASE_HOST "voice-control-home-autom-dce60-default-rtdb.asia-southeast1.firebasedatabase.app"  
-#define FIREBASE_AUTH "SZ8Ykj6AuNued4AjZxUHv7eNjHn27pNSu5IlDaTH"
+#define FIREBASE_HOST "voiceautomation-8d4cc-default-rtdb.asia-southeast1.firebasedatabase.app"  
+#define FIREBASE_AUTH "jPTXvHEUTM1BnCgglW65n3hRwcUg1PbVuFfmjPXB"
 
-#define WIFI_SSID "IOT_VOICE"     
-#define WIFI_PASSWORD "5555555555" 
+#define WIFI_SSID "IOT_Voice"     
+#define WIFI_PASSWORD "11111111" 
 
 
 FirebaseData firebaseData,loadData;
@@ -17,7 +17,7 @@ FirebaseJson json;
 
 //Receiving data
 String readData(String field){
-if (Firebase.getString(loadData, "/"+field)){
+if (Firebase.getString(loadData, "/Load/"+field)){
     return loadData.stringData();
   }
 }
@@ -75,8 +75,8 @@ void setup() {
 
 
 void pinSet(){
-  pinMode(D7,OUTPUT);//Light
-  pinMode(D8,OUTPUT);
+  pinMode(D6,OUTPUT);//Light
+  pinMode(D7,OUTPUT);
   
 }
 
@@ -100,15 +100,15 @@ void loop() {
 
 
       
-    if(readData("Fan")=="1"){
+    if(readData("Pump")=="1"){
       
-      Serial.println("Fan is on");
-      digitalWrite(D8,1);
+      Serial.println("Pump is on");
+      digitalWrite(D6,1);
       
     }else{
 
-      Serial.println("Fan is off");
-      digitalWrite(D8,0);
+      Serial.println("Pump is off");
+      digitalWrite(D6,0);
       
     }
 
