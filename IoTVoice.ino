@@ -6,8 +6,8 @@
 #define FIREBASE_HOST "voiceautomation-8d4cc-default-rtdb.asia-southeast1.firebasedatabase.app"  
 #define FIREBASE_AUTH "jPTXvHEUTM1BnCgglW65n3hRwcUg1PbVuFfmjPXB"
 
-#define WIFI_SSID "BdREN-DUET@QK"     
-#define WIFI_PASSWORD "Qk@DueT22" 
+#define WIFI_SSID "IOT_Voice"     
+#define WIFI_PASSWORD "11111111" 
 
 
 FirebaseData firebaseData,loadData;
