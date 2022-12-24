@@ -54,16 +54,6 @@ void initFire(){
 
 
 
-
-
-
-
-
-
-
-
-
-
 void setup() {
   
   Serial.begin(9600);
@@ -75,8 +65,11 @@ void setup() {
 
 
 void pinSet(){
+  pinMode(D3,INPUT_PULLUP);//light input
+  pinMode(D1,INPUT_PULLUP);//pump input
+  
   pinMode(D6,OUTPUT);//Light
-  pinMode(D7,OUTPUT);
+  pinMode(D7,OUTPUT);//Pump
   
 }
 
@@ -85,34 +78,9 @@ void pinSet(){
 
 void loop() {
 
-  
-    if(readData("Light")=="1"){
-      
-      Serial.print("Light is on ");
-      digitalWrite(D7,1);
-      
-    }else{
-
-      Serial.print("Light is off ");
-      digitalWrite(D7,0);
-      
-    }
-
-
-      
-    if(readData("Pump")=="1"){
-      
-      Serial.println("Pump is on");
-      digitalWrite(D6,1);
-      
-    }else{
-
-      Serial.println("Pump is off");
-      digitalWrite(D6,0);
-      
-    }
-
-
-   
-  
+    digitalWrite(D7,!digitalRead(D3) || readData("Light")=="1");
+    delay(100);
+    digitalWrite(D6,!digitalRead(D1) || readData("Pump")=="1");
+    delay(100);
+ 
 }
