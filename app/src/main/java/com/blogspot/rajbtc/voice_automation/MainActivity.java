@@ -71,10 +71,10 @@ public class MainActivity extends AppCompatActivity {
                     } else if ((text.contains("light") && text.contains("off"))) {
                         database.child("Light").setValue("0");
                     }
-                    else if (text.contains("Pump") && text.contains("on")) {
+                    else if (text.contains("pump") && text.contains("on")) {
                         database.child("Pump").setValue("1");
 
-                    } else if ((text.contains("Pump") && text.contains("off"))) {
+                    } else if ((text.contains("pump") && text.contains("off"))) {
 
                         database.child("Pump").setValue("0");
 
